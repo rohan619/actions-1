@@ -27,7 +27,7 @@ jobs:
     needs: docker
     concurrency: 
         group: production-deployment
-        cancel-in-progress: true
+        cancel-in-progress: false
     steps:
     - name: Deploy to Server
       run: |
